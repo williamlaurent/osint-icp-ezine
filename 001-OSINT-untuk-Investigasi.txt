@@ -1,0 +1,136 @@
+
+.______________________  ________         .__        __             
+|   \_   ___ \______   \ \_____  \   _____|__| _____/  |_           
+|   /    \  \/|     ___/  /   |   \ /  ___/  |/    \   __\          
+|   \     \___|    |     /    |    \\___ \|  |   |  \  |            
+|___|\______  /____|     \_______  /____  >__|___|  /__|            
+            \/                   \/     \/        \/                
+___________      .__                   _  _  _______  _______  ____ 
+\_   _____/______|__| ____   ____   __| || |_\   _  \ \   _  \/_   |
+ |    __)_\___   /  |/    \_/ __ \  \   __   /  /_\  \/  /_\  \|   |
+ |        \/    /|  |   |  \  ___/   |  ||  |\  \_/   \  \_/   \   |
+/_______  /_____ \__|___|  /\___  > /_  ~~  _\\_____  /\_____  /___|
+        \/      \/       \/     \/    |_||_|        \/       \/     
+
+
+              [ E-ZINE #001 - OSINT UNTUK INVESTIGASI ]
+            ------------------------------------------------
+               Diterbitkan oleh: Indonesiancodeparty | Tahun: 2025
+
+────────────────────────────────────────────────────────────
+01. APA ITU OSINT?
+────────────────────────────────────────────────────────────
+OSINT = Open Source Intelligence.
+Alias: Intelijen dari sumber TERBUKA & LEGAL.
+
+Lo bisa kumpulin data dari:
+- Google
+- Media sosial
+- Arsip web (Wayback Machine)
+- Metadata file publik
+- Database pemerintah, domain WHOIS
+- Forum, breach dumps, dll
+
+> "Segala yang terbuka, bisa jadi petunjuk."
+
+────────────────────────────────────────────────────────────
+02. KENAPA DIPAKAI BUAT INVESTIGASI?
+────────────────────────────────────────────────────────────
+OSINT dipakai buat:
+- Investigasi penipuan
+- Mengungkap identitas palsu
+- Cek latar belakang (people profiling)
+- Memetakan jaringan organisasi
+- Melacak aktivitas online seseorang
+- Investigasi kasus kriminal siber & dunia nyata
+
+Contoh kasus:
+📍 Identifikasi akun fake yang nyebar hoax
+📍 Melacak lokasi via foto yang diunggah
+📍 Menemukan pelaku doxing atau scam
+
+────────────────────────────────────────────────────────────
+03. TOOL & TRIK DASAR
+────────────────────────────────────────────────────────────
+Tools penting (semua legal & gratis):
+
+[+] Google Dorks        → pencarian spesifik
+[+] theHarvester        → scraping email + domain
+[+] ExifTool            → baca metadata file/image
+[+] Social Searcher     → lacak keyword/user di medsos
+[+] Wayback Machine     → liat versi lama dari situs
+[+] Whois / DNS tools   → info domain & IP
+[+] Maltego CE          → visualisasi relasi data
+[+] IntelX / Skymem     → cari data bocor
+
+Tips:
+- Buat mindmap dari potongan info
+- Simpan semua hasil (screenshot/logs)
+- Correlate data, jangan cuma simpan
+
+────────────────────────────────────────────────────────────
+04. STUDI KASUS MINI
+────────────────────────────────────────────────────────────
+🕵️ Kasus: Lo nemu nama "Riko Aditya" di komentar postingan penipuan.
+
+Langkah:
+1. Google Dork → `"Riko Aditya" site:facebook.com`
+2. Lacak username unik di Instagram / Twitter
+3. Gunakan Pipl atau Sherlock buat cek username reuse
+4. Temukan foto → Cek metadata (ExifTool) → Ada GPS?
+5. Masukkan GPS ke Google Maps → Cek lokasi foto
+6. Temukan koneksi sosial via mutual friends / komentar
+
+> Hasilnya? Mungkin lo nemu alamat, nomor HP, bahkan tempat kerja.
+
+────────────────────────────────────────────────────────────
+05. TIPS MINDSET INVESTIGATOR OSINT
+────────────────────────────────────────────────────────────
+✔️ Sabar & teliti: jangan buru-buru simpulin
+✔️ Dokumentasi setiap langkah
+✔️ Verifikasi dari >1 sumber
+✔️ Pisahkan asumsi dan fakta
+
+> "Sumber terbuka = informasi mentah. Tugas lo: olah jadi narasi."
+
+────────────────────────────────────────────────────────────
+06. TANTANGAN MINI
+────────────────────────────────────────────────────────────
+🎯 Target: Foto selfie random dari netizen (ambil dari Google).
+
+Objective:
+[ ] Temukan lokasi pengambilan (geo-OSINT)
+[ ] Siapa nama orang di foto?
+[ ] Ada jejak sosial media?
+[ ] Bisa tahu sekolah / pekerjaan / email?
+
+Gunakan tools:
+ExifTool, Google Image Reverse Search, Namechk, Wayback
+
+────────────────────────────────────────────────────────────
+07. REKOMENDASI BELAJAR
+────────────────────────────────────────────────────────────
+📚 Buku:
+- "Open Source Intelligence Techniques" – Michael Bazzell
+
+🌐 Website & Komunitas:
+- osintcurio.us
+- bellingcat.com
+- Reddit: r/OSINT
+- Discord: OSINT Indonesia / OSINT Dojo
+- GitHub: daftar tools OSINT → github.com/jivoi/awesome-osint
+
+────────────────────────────────────────────────────────────
+   Penutup
+────────────────────────────────────────────────────────────
+OSINT bukan ilmu hitam. Ini soal kreativitas, sabar, dan cara mikir.
+Cocok buat investigator digital masa kini — dari wartawan, analis,
+sampai warga biasa yang pengen tahu kebenaran.
+
+> “Informasi bukan cuma didapat, tapi dirangkai jadi cerita.”
+
+────────────────────────────────────────────────────────────
+         Indonesian Code Party | 2015-2025
+────────────────────────────────────────────────────────────
+   Edisi berikutnya: [ GEO-OSINT - Lacak Lokasi Dari Foto ]
+────────────────────────────────────────────────────────────
