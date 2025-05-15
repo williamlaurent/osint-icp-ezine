@@ -1,0 +1,136 @@
+.______________________  ________         .__        __                   
+|   \_   ___ \______   \ \_____  \   _____|__| _____/  |_                 
+|   /    \  \/|     ___/  /   |   \ /  ___/  |/    \   __\                
+|   \     \___|    |     /    |    \\___ \|  |   |  \  |                  
+|___|\______  /____|     \_______  /____  >__|___|  /__|                  
+            \/                   \/     \/        \/                      
+___________      .__                   _  _  _______  _______   ________  
+\_   _____/______|__| ____   ____   __| || |_\   _  \ \   _  \  \_____  \ 
+ |    __)_\___   /  |/    \_/ __ \  \   __   /  /_\  \/  /_\  \  /  ____/ 
+ |        \/    /|  |   |  \  ___/   |  ||  |\  \_/   \  \_/   \/       \ 
+/_______  /_____ \__|___|  /\___  > /_  ~~  _\\_____  /\_____  /\_______ \
+        \/      \/       \/     \/    |_||_|        \/       \/         \/
+
+        [ E-ZINE #002 - GEO-OSINT: LACAK LOKASI DARI FOTO ]
+         -------------------------------------------------
+               Diterbitkan oleh: Indonesiancodeparty | Tahun: 2025
+
+────────────────────────────────────────────────────────────
+01. APA ITU GEO-OSINT?
+────────────────────────────────────────────────────────────
+Geo-OSINT = teknik melacak lokasi dari konten digital.
+
+Fokusnya:
+- Foto (selfie, landscape, dll)
+- Video
+- Postingan sosmed
+- Koordinat tersembunyi (metadata)
+- Clue visual (jalan, tanda, gedung)
+
+> “Kadang lokasi tersembunyi di balik latar belakang.”
+
+────────────────────────────────────────────────────────────
+02. METODE PELACAKAN GEO-OSINT
+────────────────────────────────────────────────────────────
+📍 1. Metadata / EXIF (kalau belum dihapus)
+    - Tool: `exiftool`, `metapicz.com`
+    - Liat: GPSLatitude, GPSLongitude, Make, Model
+
+📍 2. Google Reverse Image Search
+    - `images.google.com` → cari kecocokan gambar
+
+📍 3. Clue visual
+    - Nama toko, plat nomor, logo, iklan, arsitektur
+
+📍 4. Analisa bayangan (jam & arah cahaya)
+    - Kombinasi dengan Google Maps / Earth
+
+📍 5. Platform Spesifik:
+    - TikTok, Instagram, Twitter: lacak lokasi post
+    - YouTube: analisa frame video
+
+📍 6. Street View & 3D Map
+    - Google Maps, Yandex Maps, Bing Maps
+    - Cek bentuk gedung, tiang listrik, marka jalan
+
+────────────────────────────────────────────────────────────
+03. TOOLS & WEBSITE GEO-OSINT
+────────────────────────────────────────────────────────────
+[+] exiftool              – baca metadata foto
+[+] FotoForensics         – analisa EXIF & ELA
+[+] Mapillary             – streetview buatan komunitas
+[+] SunCalc.org           – lacak arah matahari
+[+] Google Earth / 3D     – eksplor area sekitar
+[+] Yandex Images         – reverse image superior
+[+] what3words            – pelacakan dengan grid kata unik
+[+] GeoGuessr             – main game tebak lokasi (latihan visual)
+
+────────────────────────────────────────────────────────────
+04. STUDI KASUS MINI
+────────────────────────────────────────────────────────────
+📷 Foto: Seorang pria selfie di depan toko "Martabak Apin", ada gedung tinggi di belakang.
+
+Langkah:
+1. Zoom & identifikasi nama toko → "Martabak Apin"
+2. Google → `"Martabak Apin" site:instagram.com`
+3. Cek lokasi yang relevan di Google Maps
+4. Cocokkan background gedung via Street View
+5. Verifikasi posisi matahari (SunCalc)
+6. Final check: cocokan tiang listrik, posisi pohon, marka jalan
+
+🗺️ Output: Lokasi akurat ditemukan → Jl. Ahmad Yani, Bandung
+
+> Tanpa metadata pun, lokasi bisa ditemukan dari clue visual.
+
+────────────────────────────────────────────────────────────
+05. TANTANGAN MINI
+────────────────────────────────────────────────────────────
+🧩 Foto target:
+Cari gambar selfie orang dengan background billboard/toko.
+
+Checklist:
+[ ] Temukan lokasi (kota, jalan)
+[ ] Identifikasi toko/tempat umum
+[ ] Cocokkan dengan Google Street View
+[ ] Tambahkan penjelasan bagaimana lo bisa tahu
+
+> Gunakan: Exiftool, Google Maps, Yandex, Instagram search
+
+────────────────────────────────────────────────────────────
+06. MINDSET GEO-OSINT
+────────────────────────────────────────────────────────────
+✔️ Punya mata elang: detail kecil bisa jadi petunjuk besar  
+✔️ Jangan cuma fokus ke objek utama – lihat background  
+✔️ Rajin latihan dengan gambar random  
+✔️ Gunakan koordinasi peta dan pencarian teks
+
+> “Geo-OSINT bukan cuma soal alat, tapi soal cara lo ngelihat dunia.”
+
+────────────────────────────────────────────────────────────
+07. KOMUNITAS & LATIHAN GEO
+────────────────────────────────────────────────────────────
+🌐 Website buat latihan:
+- mapcrunch.com
+- geoguessr.com
+- geotips.net
+- reddit.com/r/geoguessr
+- twitter.com/streetviewfun
+
+🔎 Komunitas & Channel:
+- OSINT Dojo (YouTube)
+- GeoGuessr Indonesia (Discord)
+- Bellingcat Geo-Verification Guide
+
+────────────────────────────────────────────────────────────
+    Penutup
+────────────────────────────────────────────────────────────
+Geo-OSINT cocok buat investigasi penculikan, pelacakan hoax,
+jurnalisme investigatif, hingga ngungkap lokasi pasca-bencana.
+
+> “Foto bisa bohong. Tapi latar belakangnya sering jujur.”
+
+────────────────────────────────────────────────────────────
+         Indonesian Code Party | 2015 - 2025
+────────────────────────────────────────────────────────────
+   Edisi berikutnya: [ HUMAN INTELLIGENCE: MATA-MATA ONLINE ]
+────────────────────────────────────────────────────────────
